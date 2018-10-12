@@ -118,7 +118,7 @@ var hash = hashManager.Hash(valueToHash, secret);
 Currently the hash manager will support "SHA256" or "SHA1" hashing. The parameter is case insensitive and can be expanded to add other hashing algorithms.
 
 # The Ministry of Technology Open Source Products
-Welcome to The Ministry of Technology open source products. All open source Ministry of Technology products are distributed under the MIT License for maximum re-usability. Details on more of our products and services can be found on our website at http://www.ministryotech.co.uk
+Welcome to The Ministry of Technology open source products. All open source Ministry of Technology products are distributed under the MIT License for maximum re-usability. Details on more of our products and services can be found on our website at http://www.minotech.co.uk
 
 Our other open source repositories can be found here...
 
@@ -131,10 +131,10 @@ Newer content prefers Github. Bitbucket is no longer actively used.
 ### Where can I get it?
 You can download the package for this project from any of the following package managers...
 
-- **NUGET** - [https://www.nuget.org/packages/Ministry.FluentGuard](https://www.nuget.org/packages/Ministry.FluentGuard)
+- **NUGET** - [https://www.nuget.org/packages/Ministry.Web.ApiSecurity/](https://www.nuget.org/packages/Ministry.Web.ApiSecurity/)
 
 ### Contribution guidelines
 If you would like to contribute to the project, please contact me.
 
 ### Who do I talk to?
-* Keith Jackson - keith@ministryotech.co.uk
+* Keith Jackson - keith@minotech.co.uk
