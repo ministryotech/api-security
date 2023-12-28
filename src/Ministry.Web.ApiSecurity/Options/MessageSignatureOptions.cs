@@ -1,33 +1,32 @@
-﻿using System.Diagnostics.CodeAnalysis;
+﻿namespace Ministry.Web.ApiSecurity.Options;
 
-namespace Ministry.Web.ApiSecurity.Options
+/// <summary>
+/// Definition of configuration for secrets used during message signature validation.
+/// </summary>
+[SuppressMessage("ReSharper", "AutoPropertyCanBeMadeGetOnly.Global", Justification = "Options Object")]
+public class MessageSignatureOptions
 {
     /// <summary>
-    /// Definition of configuration for secrets used during message signature validation.
+    /// Gets or sets the secrets.
     /// </summary>
-    [SuppressMessage("ReSharper", "UnusedAutoPropertyAccessor.Global")]
-    public class MessageSignatureOptions
-    {
-        /// <summary>
-        /// Gets or sets the secrets.
-        /// </summary>
-        public SignatureSecret[] Secrets { get; set; }
-    }
+    public SignatureSecret[] Secrets { get; set; } = Array.Empty<SignatureSecret>();
+}
+
+/// <summary>
+/// Definition of configuration for secrets used during message signature validation.
+/// </summary>
+[SuppressMessage("ReSharper", "UnusedAutoPropertyAccessor.Global", Justification = "Options Object")]
+[SuppressMessage("ReSharper", "ClassNeverInstantiated.Global", Justification = "Options Object")]
+[SuppressMessage("ReSharper", "AutoPropertyCanBeMadeGetOnly.Global", Justification = "Options Object")]
+public class SignatureSecret
+{
+    /// <summary>
+    /// Gets or sets the key.
+    /// </summary>
+    public string Key { get; set; } = string.Empty;
 
     /// <summary>
-    /// Definition of configuration for secrets used during message signature validation.
+    /// Gets or sets the secret.
     /// </summary>
-    [SuppressMessage("ReSharper", "UnusedAutoPropertyAccessor.Global")]
-    public class SignatureSecret
-    {
-        /// <summary>
-        /// Gets or sets the key.
-        /// </summary>
-        public string Key { get; set; }
-
-        /// <summary>
-        /// Gets or sets the secret.
-        /// </summary>
-        public string Secret { get; set; }
-    }
+    public string Secret { get; set; } = string.Empty;
 }
