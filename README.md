@@ -114,6 +114,9 @@ Simply create a new instance as follows...
 
 Currently the hash manager will support "SHA256" or "SHA1" hashing. The parameter is case insensitive and can be expanded to add other hashing algorithms.
 
+## Upgrading from v1
+v2 of this library no longer supports .net Standard or .net Framework
+
 ## The Ministry of Technology Open Source Products
 Welcome to The Ministry of Technology open source products. All open source Ministry of Technology products are distributed under the MIT License for maximum re-usability.
 Our other open source repositories can be found here...
